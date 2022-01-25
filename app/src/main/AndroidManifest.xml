@@ -22,6 +22,7 @@
 
         <activity
             android:name=".Setting"
+            android:parentActivityName=".MainActivity"
             android:exported="true">
         </activity>
 

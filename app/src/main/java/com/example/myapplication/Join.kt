@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import org.jistsi.meet.sdk.JitsiMeetActivity
+//import org.jistsi.meet.sdk.JitsiMeetActivity
 
 import java.net.URL
 
@@ -26,7 +26,7 @@ class Join : AppCompatActivity() {
 
         val join_Meeting=findViewById(R.id.join_room_name) as Button
         join_Meeting.setOnClickListener(){
-            val options: JitsiMeetConferenceOptions = Builder()
+         /*   val options: JitsiMeetConferenceOptions = Builder()
                 .setServerURL(URL("https://meet.jit.si"))
                 .setRoom("test123")
                 .setAudioMuted(false)
@@ -34,7 +34,7 @@ class Join : AppCompatActivity() {
                 .setAudioOnly(false)
                 .setWelcomePageEnabled(false)
                 .setConfigOverride("requireDisplayName", true)
-                .build()
+                .build()*/
         }
 
 

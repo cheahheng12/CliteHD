@@ -5,34 +5,157 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:hint="Name"
+
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/setting1"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Setting" />
+
+    <TextView
+        android:id="@+id/profile1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="58dp" />
+        android:layout_below="@+id/setting1"
+        android:layout_marginLeft="20sp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="70sp"
+        android:text="Email: "
+        android:textColor="@color/black"
+
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:hint="Email"
+
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextPersonName"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:layout_below="@+id/setting1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="150dp"
+        android:text="Conference"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="160sp"
+        android:text="Server URL: "
+        android:textColor="@color/black"
+
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_below="@id/editTextTextPersonName2"
+        android:id="@+id/serverURL"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:hint="Server URL"
+
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/audio_mute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:layout_below="@+id/profile1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="220sp"
+        android:text="Start With Audio Mute"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/video_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="270sp"
+        android:text="Start With Video Mute"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="360dp"
+        android:text="Conference"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="390dp"
+        android:text="Version 1.0"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+
+
 </RelativeLayout>
