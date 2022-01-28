@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -40,6 +47,17 @@
             android:exported="true">
         </activity>
 
+
+        <activity
+            android:name=".MeetActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".schedule"
+            android:parentActivityName=".Create"
+            android:exported="true">
+        </activity>
 
     </application>
 
