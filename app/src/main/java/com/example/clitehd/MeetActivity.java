@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.clitehd;
 
 import org.jitsi.meet.sdk.JitsiMeetActivity;
 

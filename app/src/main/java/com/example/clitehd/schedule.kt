@@ -1,20 +1,16 @@
-package com.example.myapplication
+package com.example.clitehd
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import java.text.SimpleDateFormat
-import java.time.Year
 import java.util.*
 
 class schedule : AppCompatActivity() {

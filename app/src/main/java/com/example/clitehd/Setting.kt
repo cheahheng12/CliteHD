@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.clitehd
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

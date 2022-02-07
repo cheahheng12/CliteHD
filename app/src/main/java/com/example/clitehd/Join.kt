@@ -1,26 +1,18 @@
-package com.example.myapplication
+package com.example.clitehd
 
 
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.facebook.react.modules.core.PermissionListener
-import org.jitsi.meet.sdk.JitsiMeetActivity
 import org.jitsi.meet.sdk.JitsiMeetActivityInterface
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions
 import org.jitsi.meet.sdk.JitsiMeetView
 
 import java.net.URL
-import java.util.jar.Manifest
 
 //extends JitsiMeetActivity
 class Join : AppCompatActivity(), JitsiMeetActivityInterface {
@@ -40,16 +32,17 @@ class Join : AppCompatActivity(), JitsiMeetActivityInterface {
         room_name = findViewById(R.id.RoomName)
 
         join_Meeting.setOnClickListener() {
-            val temp = "test123"
+
+
+
 
             if (TextUtils.isEmpty(room_name.text.toString())) {
                 room_name.setError("Please input")
 
             } else {
-                if ((room_name.text.toString()).equals(temp) == true) {
                     val view = JitsiMeetView(this@Join)
                     val options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
-                        // .setServerURL(URL("https://meet.jit.si"))
+                         .setServerURL(URL("https://v2.clitehd.com"))
                         .setRoom("https://meet.jit.si/AbstractShirtsRejectFast")
                         // .setRoom("room1")
                         .setAudioMuted(false)
@@ -62,13 +55,7 @@ class Join : AppCompatActivity(), JitsiMeetActivityInterface {
 
                     view.join(options)
                     setContentView(view)
-                } else {
-                    Toast.makeText(
-                        getApplicationContext(),
-                        "cannot find the room",
-                        Toast.LENGTH_SHORT
-                    ).show();
-                }
+
 
             }
 

@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.clitehd
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,7 +22,7 @@ class Create : AppCompatActivity(), JitsiMeetActivityInterface {
 
         val schedule = findViewById<Button>(R.id.schedule_btn)
         schedule.setOnClickListener() {
-            val intent = Intent(this, com.example.myapplication.schedule::class.java)
+            val intent = Intent(this, com.example.clitehd.schedule::class.java)
             startActivity(intent)
 
         }
