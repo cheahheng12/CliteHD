@@ -44,7 +44,7 @@ class Join : AppCompatActivity(), JitsiMeetActivityInterface {
                     val options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
                          .setServerURL(URL("https://v2.clitehd.com"))
                         .setRoom("https://meet.jit.si/AbstractShirtsRejectFast")
-                        // .setRoom("room1")
+
                         .setAudioMuted(false)
                         .setVideoMuted(false)
                         //.setToken()
@@ -55,6 +55,7 @@ class Join : AppCompatActivity(), JitsiMeetActivityInterface {
 
                     view.join(options)
                     setContentView(view)
+                supportActionBar?.hide()
 
 
             }

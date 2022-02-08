@@ -10,6 +10,7 @@ import com.facebook.react.modules.core.PermissionListener
 import org.jitsi.meet.sdk.JitsiMeetActivityInterface
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions
 import org.jitsi.meet.sdk.JitsiMeetView
+import java.net.URL
 
 class Create : AppCompatActivity(), JitsiMeetActivityInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,9 +34,8 @@ class Create : AppCompatActivity(), JitsiMeetActivityInterface {
             if(!TextUtils.isEmpty(username_create.text.toString())&& !TextUtils.isEmpty(pass_create.text.toString())){
                 val view = JitsiMeetView(this@Create)
                 val options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
-                    // .setServerURL(URL("https://meet.jit.si"))
+                    .setServerURL(URL("https://v2.clitehd.com"))
                     .setRoom("https://meet.jit.si/AbstractShirtsRejectFast")
-                    // .setRoom("room1")
                     .setAudioMuted(false)
                     .setVideoMuted(false)
                     //.setToken()
@@ -46,6 +46,8 @@ class Create : AppCompatActivity(), JitsiMeetActivityInterface {
 
                 view.join(options)
                 setContentView(view)
+                supportActionBar?.hide()
+
             }
             else if(TextUtils.isEmpty(username_create.text.toString())){
                 username_create.setError("Please input")
