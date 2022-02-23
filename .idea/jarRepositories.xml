@@ -36,5 +36,11 @@
       <option name="name" value="maven" />
       <option name="url" value="https://gitlab.com/bspoke.infotech/clitehd-droid-sdk/raw/master/releases" />
     </remote-repository>
+  <!--
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://gitlab.com/bspoke.infotech/clitehd-droid-sdk/raw/main/releases" />
+    </remote-repository>-->
   </component>
 </project>

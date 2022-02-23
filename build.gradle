@@ -12,8 +12,7 @@ buildscript {
 allprojects {
     repositories {
         maven {
-           // url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-            url "https://gitlab.com/bspoke.infotech/clitehd-droid-sdk/raw/master/releases"
+            url "https://gitlab.com/bspoke.infotech/clitehd-droid-sdk/raw/main/releases"
         }
         google()
         mavenCentral()
